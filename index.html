@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Home Service Booking</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="wrap">
+            <a href="#home" class="logo"><i>🏠</i>HomeServe</a>
+            <button class="burger" id="burger" aria-label="Menu">☰</button>
+            <div class="links" id="links">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#bookings">Bookings</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#" id="profileBtn">👤 <span id="uname">Profile</span></a>
+                <button class="btn sm" id="logout">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" id="home">
+        <div class="wrap">
+            <h1>Trusted Home Services at Your Doorstep</h1>
+            <p>Book verified plumbers, electricians, cleaners and more near you. Clear prices, real ratings.</p>
+            <div class="search">
+                <input id="q" placeholder="What do you need? e.g. leaking tap" aria-label="Search services">
+                <input id="loc" placeholder="Your city or area" aria-label="Location">
+                <button class="btn amber" id="searchBtn">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- SERVICES -->
+    <section id="services">
+        <div class="wrap">
+            <h2>Popular services</h2>
+            <p class="sub">Pick a service to see what it costs and who is available.</p>
+            <div class="chips" id="chips"></div>
+            <div class="grid" id="svcGrid"></div>
+        </div>
+    </section>
+
+    <!-- WORKERS -->
+    <section class="alt" id="workers">
+        <div class="wrap">
+            <div class="row">
+                <div>
+                    <h2>Workers near you</h2>
+                    <p class="sub" id="wSub">Showing all available workers.</p>
+                </div>
+                <select id="sort" style="width:auto" aria-label="Sort">
+                    <option value="d">Nearest first</option>
+                    <option value="r">Top rated</option>
+                    <option value="p">Lowest price</option>
+                </select>
+            </div>
+            <div class="grid" id="wGrid"></div>
+        </div>
+    </section>
+
+    <!-- BOOKINGS -->
+    <section id="bookings">
+        <div class="wrap">
+            <h2>My bookings</h2>
+            <p class="sub">Your booked services and their status.</p>
+            <div class="grid" id="bGrid"></div>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="alt" id="reviews">
+        <div class="wrap">
+            <h2>What customers say</h2>
+            <p class="sub">Rated 4.8 out of 5 across 12,000+ jobs.</p>
+            <div class="grid">
+                <div class="card q">
+                    <div class="stars">★★★★★</div>
+                    <p>Pipe leak fixed in under an hour. Arrived on time and quoted exactly what he charged.</p>

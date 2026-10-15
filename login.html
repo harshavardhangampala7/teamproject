@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Login · Home Service Booking</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="auth">
+
+        <!-- LEFT SIDE -->
+        <div class="aside">
+            <div class="logo" style="color:#fff"><i>🏠</i>HomeServe</div>
+            <h1>Skilled help, booked in a minute.</h1>
+            <ul>
+                <li>Verified plumbers, electricians, cleaners and more</li>
+                <li>See ratings, price and distance before you book</li>
+                <li>Track every booking in one place</li>
+            </ul>
+        </div>
+
+        <!-- RIGHT SIDE: FORM -->
+        <div class="pane">
+            <div class="in">
+                <h2>Welcome</h2>
+                <p class="sub" style="margin:0">Log in or create an account to continue.</p>
+
+                <div class="tabs">
+                    <button id="tL" class="on">Login</button>
+                    <button id="tR">Register</button>
+                </div>
+
+                <form id="form" class="f" novalidate>
+                    <label id="nameL" hidden>Full name
+                        <input id="name" autocomplete="name">
+                        <span class="err"></span>
+                    </label>
+
+                    <label>Email or mobile number
+                        <input id="id" autocomplete="username" placeholder="you@email.com or 9876543210">
+                        <span class="err"></span>
+                    </label>
+
+                    <label>Password
+                        <input id="pw" type="password" autocomplete="current-password" placeholder="At least 6 characters">
+                        <span class="err"></span>
+                    </label>
+
+                    <label id="cpL" hidden>Confirm password
+                        <input id="cp" type="password" autocomplete="new-password">
+                        <span class="err"></span>
+                    </label>
+
+                    <button class="btn amber" id="go">Login</button>
+                    <div class="err" id="msg" style="text-align:center"></div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+
+</html>
